@@ -46,6 +46,8 @@ Then, you can get data frame like this:
 
 
 3) import several data
+
+
 The read.med function reads one text file, but you may want to read all the files you have in your folder. Simply, use read.med.all() function.
 
 files = list.files(pattern="txt")
@@ -54,7 +56,7 @@ d = read.med.all(files, rft_indicator=0.2, scale = 100,remove_initial=16)
 The read.med.all() read all the text files and combine as tidy data frame. Then, your analysis truely starts.
 
 
-3) estimate bout parameter
+4) estimate bout parameter
 Bout-pause response pattern is fancy analysis. You should definitely do if you have operant response dataset.
 Anyway, the uglymed allows you to perform bout-pause analysis by simply running
 
